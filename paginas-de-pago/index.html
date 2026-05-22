@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #111850;
+      color: #f9fafb;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    .checkout-container {
+      width: 100%;
+      max-width: 1000px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+    }
+
+    section {
+      background: #1f2937;
+      border-radius: 12px;
+      padding: 25px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    }
+
+    h1 {
+      grid-column: span 2;
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: #60a5fa;
+    }
+
+    .product-image {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .product-info {
+      line-height: 1.7;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    span {
+      color: #f87171;
+    }
+
+    input {
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      background: #374151;
+      color: white;
+      font-size: 1rem;
+    }
+
+    input:focus {
+      outline: 2px solid #60a5fa;
+    }
+
+    .help-text {
+      margin-top: 8px;
+      font-size: 0.85rem;
+      color: #d1d5db;
+    }
+
+    button {
+      margin-top: 10px;
+      padding: 14px;
+      border: none;
+      border-radius: 8px;
+      background: #2563eb;
+      color: white;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #1d4ed8;
+    }
+
+    @media (max-width: 768px) {
+      .checkout-container {
+        grid-template-columns: 1fr;
+      }
+
+      h1 {
+        grid-column: span 1;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="checkout-container">
+
+    <h1>Checkout</h1>
+
+    <section>
+      <h2>Your Cart</h2>
+
+      <img
+        class="product-image"
+        src="https://cdn.freecodecamp.org/curriculum/labs/cube.jpg"
+        alt="Cubo decorativo moderno color azul"
+      />
+
+      <div class="product-info">
+        <p><strong>Producto:</strong> Blue Magic Cube</p>
+        <p><strong>Cantidad:</strong> 1</p>
+        <p><strong>Precio:</strong> 49.99 €</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Payment Information</h2>
+
+      <form>
+
+        <div class="form-group">
+          <label for="card-name">
+            Card Name
+            <span aria-hidden="true">*</span>
+          </label>
+
+          <input
+            id="card-name"
+            name="card-name"
+            type="text"
+            required
+            placeholder="John Doe"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="card-number">
+            Card Number
+            <span aria-hidden="true">*</span>
+          </label>
+
+          <input
+            id="card-number"
+            name="card-number"
+            type="text"
+            required
+            aria-describedby="card-number-help"
+            placeholder="1234 5678 9012 3456"
+          />
+
+          <p id="card-number-help" class="help-text">
+            Enter your card number using 16 digits separated by spaces.
+          </p>
+        </div>
+
+        <button type="submit">Complete Payment</button>
+
+      </form>
+    </section>
+
+  </main>
+
+</body>
+</html>
