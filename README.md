@@ -19,3 +19,5 @@
  - Basics
 
  ### CSS
+ - Basic CSS
+ - Design...
