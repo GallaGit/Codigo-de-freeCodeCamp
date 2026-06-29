@@ -3,7 +3,7 @@
 ---
 
 ## Goal                             
-- Obtener un certificado en Responsive Design
+- Obtener un certificado en Full Stack Dev
 
 ---
 
