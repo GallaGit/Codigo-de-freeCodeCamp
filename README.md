@@ -7,7 +7,7 @@
 
 ---
 
-## Temas
+## Responsive Web Design
  ### HTML ✅
  - Basics
  - Semantic
