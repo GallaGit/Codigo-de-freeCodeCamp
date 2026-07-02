@@ -3,11 +3,11 @@
 ---
 
 ## Goal                             
-- Obtener un certificado en Responsive Design
+- Obtener un certificado en Full Stack Dev
 
 ---
 
-## Temas
+## Responsive Web Design
  ### HTML ✅
  - Basics
  - Semantic
@@ -19,3 +19,5 @@
  - Basics
 
  ### CSS
+ - Basic CSS
+ - Design...
