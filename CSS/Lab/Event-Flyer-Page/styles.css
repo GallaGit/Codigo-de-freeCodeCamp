@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 88vw;
+  min-height: calc(100vh - 100px);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(160deg, #1a0f2e 0%, #2d1b4e 45%, #0f172a 100%);
+  color: #f8f4ff;
+}
+
+header {
+  text-align: center;
+}
+
+header img {
+  display: block;
+  width: 100%;
+  max-height: 320px;
+  object-fit: cover;
+  border-radius: 18px 18px 0 0;
+  border: 2px solid #c9a227;
+  border-bottom: none;
+}
+
+header h1 {
+  padding: 1.25rem 1rem;
+  background: #c9a227;
+  color: #1a0f2e;
+  font-size: clamp(1.5rem, 4vw, 2.4rem);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  border-radius: 0 0 18px 18px;
+  border: 2px solid #c9a227;
+  border-top: none;
+}
+
+hr {
+  width: 80%;
+  margin: 2rem auto;
+  border: none;
+  height: 3px;
+  background-color: #c9a227;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+section {
+  width: 90%;
+  margin: 0 auto;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.06);
+  border-left: 4px solid #c9a227;
+  border-radius: 0 12px 12px 0;
+}
+
+section h2 {
+  margin-bottom: 0.75rem;
+  color: #f0d878;
+  font-size: 1.35rem;
+}
+
+section p {
+  line-height: 1.7;
+  color: #e2d9f3;
+}
+
+section ul {
+  margin-top: 0.5rem;
+  padding-left: 1.25rem;
+  line-height: 1.8;
+  color: #d4c4f0;
+}
