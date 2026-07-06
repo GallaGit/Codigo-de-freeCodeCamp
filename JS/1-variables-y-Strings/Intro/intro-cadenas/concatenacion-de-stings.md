@@ -11,7 +11,7 @@ Aquí tienes un ejemplo:
 let firstName = "John";
 let lastName = "Doe";
 
-let fullName = firstName + " " + lastName; 
+let fullName = firstName + " " + lastName;  
 console.log(fullName); // John Doe
 En este ejemplo, utilizamos el operador + para concatenar las variables firstName y lastName junto con un espacio (" ") para crear el nombre completo.
 
@@ -22,7 +22,7 @@ Aquí tienes un ejemplo donde falta un espacio:
 let firstName = "John";
 let lastName = "Doe";
 
-let fullName = firstName + lastName; 
+let fullName = firstName + lastName;  
 console.log(fullName); // "JohnDoe"
 Siempre que uses el operador + para concatenar cadenas, es importante verificar posibles problemas de espaciado.
 
@@ -53,7 +53,7 @@ Aquí tienes un ejemplo de cómo usar el método concat() para unir dos cadenas 
 let str1 = 'Hello';
 let str2 = 'World';
 
-let result = str1.concat(' ', str2); 
+let result = str1.concat(' ', str2);  
 console.log(result); // Hello World
 En este ejemplo, usamos el método concat() para unir str1, un espacio (' ') y str2 en una sola cadena de texto.
 
