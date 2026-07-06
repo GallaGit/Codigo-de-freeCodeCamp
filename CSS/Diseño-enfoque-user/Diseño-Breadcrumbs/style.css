@@ -1,0 +1,34 @@
+.breadcrumbs {
+    font-size: 0.9rem;
+    color: #555;
+    margin: 1rem 0;
+  }
+
+  p {
+    font-size: 1.2rem;
+    color: #f30000;
+    margin: 1rem 0;
+  }
+
+  .breadcrumbs-2 {
+    font-size: 0.9rem;
+    color: #555;
+    margin: 1rem 0;
+  }
+
+  .main-nav {
+    background-color: #333;
+    padding: 1rem;
+  }
+  
+  .main-nav a {
+    color: white;
+    margin-right: 1rem;
+    text-decoration: none;
+  }
+  
+  .breadcrumbs {
+    font-size: 0.9rem;
+    color: #555;
+    margin: 1rem 0;
+  }

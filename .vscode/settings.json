@@ -1,0 +1,7 @@
+{
+    "terminal.integrated.suggest.enabled": true,
+    "liveServer.settings.fullReload": true,
+    "liveServer.settings.CustomBrowser": "chrome",
+    "liveServer.settings.wait": 100,
+    "liveServer.settings.donotShowInfoMsg": true
+}
