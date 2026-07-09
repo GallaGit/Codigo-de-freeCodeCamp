@@ -1,0 +1,81 @@
+# Fundamentos de diseño
+
+## Terminología de diseño
+
+**Distribución:** Esta es la forma en que se organizan los elementos visuales en una página o pantalla para comunicar un mensaje. Estos elementos pueden incluir texto, imágenes y espacios en blanco.
+
+**Alineación:** Esta es la manera en que los elementos se colocan en relación entre sí. Utilizar la alineación correctamente es útil para que el diseño se vea limpio y organizado.
+
+**Composición:** Este es el acto de disponer elementos para crear un diseño armonioso. Determina cómo elementos como imágenes, texto y figuras se relacionan entre sí y contribuyen al diseño de manera artística.
+
+**Equilibrio:** Esta es la forma en que se distribuye el peso visual dentro de una composición. Los diseñadores buscan crear un equilibrio mediante disposiciones simétricas o asimétricas.
+
+**Escala:** Esto se refiere a comparar las dimensiones o el tamaño de un elemento con el de otro.
+
+**Jerarquía:** Esto establece el orden de importancia de los elementos en un diseño. Se trata de asegurarse de que la información más importante se note primero.
+
+**Contraste:** Este es el proceso de crear distinciones claras entre los elementos. Puedes hacerlo mediante variaciones de color, tamaño, figura, textura o cualquier otra característica visual. Un fuerte contraste también es útil para mejorar la legibilidad.
+
+**Espacio en blanco (espacio negativo):** Este es el espacio vacío en un diseño. Es el área que rodea los elementos.
+
+**UI (User Interface):** UI incluye los elementos visuales e interactivos que los usuarios pueden ver en sus pantallas, como íconos, imágenes, texto, menús, enlaces y botones.
+
+**UX (Experiencia de Usuario):** UX trata sobre cómo se sienten los usuarios al usar un producto o servicio. Una aplicación con una experiencia de usuario bien diseñada es intuitiva, fácil de usar, eficiente, accesible y agradable.
+
+**Brief de diseño:** Este es un documento que resume los objetivos, metas y requisitos de un proyecto. Es un mapa de ruta que guía el proceso de diseño y asegura que el producto final cumpla con las necesidades del cliente.
+
+**Diseño basado en vectores:** Esto implica crear arte digital utilizando fórmulas matemáticas para definir líneas, formas y colores.
+
+**Prototipado:** Esto se refiere al proceso de crear un modelo interactivo de un producto o interfaz de usuario.
+
+## Fundamentos del diseño de IU
+
+**Buen contraste para los colores de fondo y primer plano:** Es importante asegurarse de que los colores de fondo y primer plano tengan un buen contraste para que el texto sea legible. Las Pautas de Accesibilidad del Contenido Web (WCAG, por sus siglas en inglés) recomiendan una relación de contraste mínima de 4.5:1 para texto normal y 3:1 para texto grande.
+
+**Buena jerarquía visual en el diseño:** Una jerarquía visual fuerte puede proporcionar un camino claro para que el ojo siga, asegurándose de que la información que transmites sea consumida en el orden que prevees.
+
+**Imágenes responsivas:** Las imágenes responsivas son imágenes que se ajustan al tamaño de la pantalla en la que se visualizan. Esto es importante porque garantiza que tus imágenes se vean bien en todos los dispositivos, desde computadoras de escritorio hasta teléfonos móviles.
+
+**Mejora progresiva:** Este es un enfoque de diseño que asegura que todos los usuarios, independientemente del navegador o dispositivo, pueden acceder al contenido esencial y la funcionalidad de una aplicación.
+
+**Diseño centrado en el usuario:** Este es un enfoque que prioriza al usuario final, desde sus necesidades hasta sus preferencias y limitaciones. El objetivo del diseño centrado en el usuario es crear una página web que sea intuitiva, eficiente y agradable para que interactúen sus usuarios.
+
+**Investigación de usuarios:** Este es el estudio sistemático de las personas que usan tu producto. El objetivo es medir las necesidades, comportamientos y puntos críticos de los usuarios.
+
+**Entrevistas de Salida:** Esta es una encuesta que puede dar a los usuarios cuando cancelan sus cuentas. Puede ayudarle a entender por qué los usuarios están dejando el servicio y qué puede hacer para reducir la pérdida.
+
+**Pruebas de usuario:** Esto se refiere a la práctica de capturar datos de los usuarios mientras interactúan con tu aplicación.
+
+**Pruebas A/B:** Este es el proceso de lanzar una nueva función a un subconjunto seleccionado aleatoriamente de tu base de usuarios. Luego, puedes aprovechar los datos analíticos para determinar si la característica es beneficiosa.
+
+**Requisitos del usuario:** Esto se refiere a las historias o reglas que tu aplicación necesita seguir. Los requisitos del usuario podrían estar definidos por la investigación del usuario o estándares de la industria. Incluso pueden ser definidos por las aportaciones de las partes interesadas.
+
+**Revelación progresiva:** Este es un patrón de diseño utilizado para mostrar solo contenido relevante a los usuarios en función de su actividad actual y ocultar el resto. Esto se hace para reducir la carga cognitiva y hacer más intuitiva la experiencia del usuario.
+
+**Registro diferido/perezoso:** Este es un patrón de diseño de IU que permite a los usuarios explorar e interactuar con tu aplicación sin tener que registrarse.
+
+## Mejores Prácticas de Diseño
+
+**Modo Oscuro:** Esta es una característica especial en las aplicaciones web donde puedes cambiar el esquema de colores claro predeterminado a un esquema de colores oscuros. Deberías usar colores desaturados en el modo oscuro. Los colores desaturados son colores menos intensos y con un nivel más bajo de saturación.
+
+**Migas de pan:** Esta es una ayuda de navegación que muestra al usuario dónde se encuentra en la jerarquía del sitio. Es mejor colocar las migas de pan en la parte superior de la página para que los usuarios puedan encontrarlas fácilmente. Además, quieres asegurarte de que las migas de pan sean lo suficientemente grandes para leerse fácilmente, pero no tan grandes que ocupen demasiado espacio en la página.
+
+**Componente de tarjeta:** Tu componente de tarjeta debería ser simple en diseño, no visualmente desordenado ni mostrar demasiada información. Para medios, asegúrate de elegir imágenes y videos de alta calidad para mejorar la experiencia del usuario.
+
+**Desplazamiento infinito:** Este es un patrón de diseño que carga más contenido mientras el usuario se desplaza hacia abajo en la página. Deberías considerar usar un botón de cargar más porque le da al usuario el control sobre cuándo quiere ver más contenido. También puedes añadir un botón de retroceso para que los usuarios tengan la habilidad de volver a la página anterior sin tener que desplazarse hasta arriba de nuevo.
+
+**Cuadro de Diálogo Modal:** Este es un tipo de ventana emergente que se muestra sobre el contenido existente de la página. Normalmente, el contenido de fondo tendrá una superposición de color tenue para ayudar al usuario a enfocarse mejor en el contenido modal. Además, siempre es una buena idea permitir que el usuario haga clic fuera del modal para cerrarlo. Cuando uses el elemento `dialog` de HTML, obtendrás muchas de las funcionalidades y beneficios de accesibilidad integrados.
+
+**Indicación de progreso para el registro de formularios:** Esta es una manera de mostrar a los usuarios qué tan avanzados están en un proceso. Puede usarse en formularios, registros y procesos de configuración. Tu diseño debería ser simple, fácil de encontrar, y hacer posible volver a pasos anteriores.
+
+**Carro de compras:** Los carros son un lugar donde el usuario puede ver qué elementos ha seleccionado en una plataforma de comercio electrónico. Tus carros siempre deberán estar visibles para el usuario, usa un ícono común como un carro, bolsa o cesta, y ten un botón de llamada a la acción claro para proceder a pagar.
+
+## Herramientas comunes de diseño
+
+**Figma:** Esta herramienta basada en la nube se especializa en el diseño de Interfaz de Usuario y Experiencia de Usuario (IU/UX). Permite a los equipos de diseño y desarrollo colaborar desde cualquier lugar, ofreciendo características incorporadas, incluyendo diseño basado en vectores, disposición automática, un sistema de comentarios y más.
+
+**Sketch:** Esta es una herramienta popular de diseño utilizada por su interfaz intuitiva y simplicidad, haciéndola ideal para desarrolladores que quieren rápidamente crear prototipos. También es ampliamente utilizado por diseñadores para tareas como la creación de interfaces de usuario, iconos y diseños web.
+
+**Adobe XD:** Esta es una herramienta de diseño y prototipado basada en vectores para diseño UI/UX, conocida por su integración fluida con otras apps de Adobe como Photoshop, Illustrator y After Effects.
+
+**Canva:** Esta herramienta te permite crear una amplia gama de contenido visual, incluyendo carteles, fotos de portada, presentaciones, videos cortos y más. Su diseño amigable y simple lo hace ideal para principiantes.
