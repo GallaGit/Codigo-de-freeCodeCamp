@@ -1,0 +1,5 @@
+INFO - Programa iniciado
+ERROR - No se pudo conectar a la base de datos
+INFO - Reintentando conexión
+ERROR - Tiempo de espera agotado
+INFO - Programa terminado
