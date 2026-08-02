@@ -1,0 +1,133 @@
+Revisión de Unidades Relativas y Absolutas en CSS
+Unidades absolutas
+px (Pixels): Esta unidad absoluta es una unidad de medida de tamaño fijo en CSS. Es la unidad absoluta más común y ofrece un control preciso sobre las dimensiones. 1px siempre equivale a 1/96 de pulgada.
+in (Pulgada): Esta unidad absoluta equivale a 96px.
+cm (Centímetros): Esta unidad absoluta equivale a 25.2/64 de una pulgada.
+mm (Milímetros): Esta unidad absoluta equivale a 1/10 de un centímetro.
+q (Cuarto-Milímetros): Esta unidad absoluta equivale a 1/40 de un centímetro.
+pc (Picas): Esta unidad absoluta equivale a 1/6 de una pulgada.
+pt (Puntos): Esta unidad absoluta equivale a 1/72 de una pulgada.
+<link rel="stylesheet" href="styles.css">
+<div class="units">
+  <div class="unit px">px</div>
+  <div class="unit inch">in</div>
+  <div class="unit cm">cm</div>
+  <div class="unit mm">mm</div>
+  <div class="unit q">q</div>
+  <div class="unit pc">pc</div>
+  <div class="unit pt">pt</div>
+</div>
+.units {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+.unit {
+  background: steelblue;
+  color: white;
+  text-align: center;
+  padding: 4px;
+}
+
+.px {
+  width: 40px;
+  height: 40px;
+}
+
+.inch {
+  width: 0.5in;
+  height: 0.5in;
+}
+
+.cm {
+  width: 1cm;
+  height: 1cm;
+}
+
+.mm {
+  width: 10mm;
+  height: 10mm;
+}
+
+.q {
+  width: 40q;
+  height: 40q;
+}
+
+.pc {
+  width: 6pc;
+  height: 6pc;
+}
+
+.pt {
+  width: 36pt;
+  height: 36pt;
+}
+Unidades Relativas
+Porcentajes: Estas unidades relativas te permiten definir tamaños, dimensiones y otras propiedades como una proporción del elemento padre. Por ejemplo, si configuras width: 50%; en un elemento, ocupará la mitad del ancho de su contenedor padre.
+em Unidad: Estas unidades son relativas al tamaño de fuente del elemento. Si estás utilizando ems para la propiedad font-size, el tamaño del texto será relativo al tamaño de fuente del elemento padre.
+rem Unidad: Estas unidades son relativas al tamaño de fuente del elemento raíz, que es el elemento html.
+vh Unidad: vh significa "viewport height" y 1vh equivale al 1% de la altura del viewport.
+vw Unidad: vw significa "viewport width" y 1vw equivale al 1% del ancho del viewport.
+<link rel="stylesheet" href="styles.css">
+<div class="parent">
+  <div class="box percent">50%</div>
+  <div class="box em">2em</div>
+  <div class="box rem">2rem</div>
+  <div class="box vh">10vh</div>
+  <div class="box vw">10vw</div>
+</div>
+html {
+  font-size: 16px;
+}
+
+.parent {
+  width: 200px;
+  font-size: 20px;
+  border: 2px dashed #555;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.box {
+  background: seagreen;
+  color: white;
+  text-align: center;
+  padding: 6px;
+}
+
+.percent {
+  width: 50%;
+}
+
+.em {
+  font-size: 2em;
+}
+
+.rem {
+  font-size: 2rem;
+}
+
+.vh {
+  height: 10vh;
+}
+
+.vw {
+  width: 10vw;
+}
+Función calc
+calc() Función: Con la función calc(), puedes realizar cálculos directamente dentro de tus hojas de estilo para determinar valores de propiedades dinámicamente. Esto significa que puedes crear interfaces de usuario flexibles y receptivas calculando dimensiones basadas en el tamaño del viewport u otros elementos.
+<link rel="stylesheet" href="styles.css">
+<div class="calc-box">calc()</div>
+.calc-box {
+  width: calc(100% - 40px);
+  padding: 10px;
+  background: steelblue;
+  color: white;
+  text-align: center;
+  border: 2px solid black;
+}
