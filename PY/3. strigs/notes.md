@@ -69,4 +69,3 @@ Código de ejemplo
 greeting = 'hi'
 greeting[0] = 'H' # TypeError: 'str' object does not support item assignment
 Ejemplos de otros tipos de datos inmutables en Python son integer, float, boolean, tuple y range. Conocerás cada uno de estos tipos en las próximas lecciones.
-

@@ -1,0 +1,84 @@
+¿Qué es la función calc() y cómo funciona?
+Con la función calc(), puedes realizar cálculos directamente dentro de tus hojas de estilos para determinar dinámicamente los valores de las propiedades. Esto significa que puedes crear interfaces de usuario flexibles y receptivas calculando dimensiones basadas en el tamaño del viewport u otros elementos.
+
+calc() es una función de CSS. Aprenderás más sobre funciones cuando comiences a aprender sobre JavaScript, pero en esta lección, vas a aprender lo básico que necesitas saber para entender cómo funciona calc().
+
+Una función es un bloque de código que realiza una tarea específica. Algunas funciones ya están definidas en CSS, así que puedes usarlas directamente y pasarles cualquier valor necesario para personalizar cómo se realizará su tarea.
+
+En el mundo de la programación, cuando ejecutamos la tarea realizada por una función, decimos que "llamamos" a la función. Los valores que pasamos a la función se conocen como argumentos.
+
+Como puedes ver en el código a continuación, para llamar a una función, se escribe su nombre seguido de los argumentos entre paréntesis, separados por comas. No debe haber un espacio entre el nombre de la función y el paréntesis de apertura:
+
+function(argument1, argument2, argument3)
+Una función puede necesitar solo un valor para saber qué hacer. En ese caso, solo tomará un argumento. Eso es lo que sucede con la función calc(). Toma un argumento porque necesita saber qué calcular.
+
+Para esto, se pasa algo llamado expresión como argumento. Una expresión es una combinación de valores y operadores que produce un resultado.
+
+Así es como puedes llamar a la función calc(). Escribes el nombre calc, seguido por los paréntesis, y dentro de los paréntesis, escribes la expresión:
+
+calc(expression)
+La expresión se evalúa para calcular el resultado final. "Evaluated" solo significa que los valores y operadores se convierten en un solo valor detrás de escena. El resultado se asigna a la propiedad CSS donde se está realizando el cálculo.
+
+Puedes realizar cálculos sobre valores que representan longitud, ángulo, tiempo, porcentajes, números y colores. También puedes combinar diferentes unidades como píxeles, porcentajes y ems.
+
+Con números, todos los valores en la expresión, también llamados los operandos, deben tener sus correspondientes unidades, como px, em y porcentaje (%). Dependiendo del operador, diferentes operandos pueden tener diferentes unidades.
+
+Puedes usar los operadores de suma (+), resta (-), multiplicación (*) y división (/) en la expresión.
+
+Si hay múltiples operandos y operadores, calc() seguirá la regla estándar de precedencia de operadores. También puedes agregar paréntesis para establecer el orden de las operaciones si es necesario.
+
+En el ejemplo siguiente, puedes ver un div con el texto Hello, World!.
+
+Usando el selector de tipo CSS para seleccionar el div, se puede estilizar con texto blanco y un fondo azul oscuro:
+
+<link rel="stylesheet" href="styles.css" />
+<div>Hello, World!</div>
+div {
+  color: white;
+  background-color: #1b1b32;
+  width: calc(50% - 20px);
+}
+Lo nuevo aquí es que el ancho se calcula dinámicamente. Observa cómo estamos llamando a la función calc() y pasando una expresión como argumento. La expresión tiene dos operandos con diferentes unidades y un operador, el operador de resta.
+
+El porcentaje es una unidad relativa. El valor (50%) será determinado por el ancho del contenedor principal. Luego, se resta 20px del valor. El resultado de esta expresión determinará el ancho del div.
+
+El ancho del div es aproximadamente la mitad del ancho total de su contenedor y si cambias el tamaño del contenedor principal, el ancho se recalculará automáticamente.
+
+Esa es la gran ventaja de usar calc(). Puedes determinar el valor de una propiedad CSS dinámicamente basado en diferentes aspectos de la aplicación o la ventana gráfica.
+
+La expresión también puede contener funciones y variables de CSS si necesitas usarlas en tus cálculos. Aprenderás más sobre las variables de CSS en las próximas lecciones.
+
+Genial. Ahora que conoces los conceptos básicos de la función calc(), veamos algunas de sus mejores prácticas.
+
+Primero, debes rodear los operadores de adición (+) y sustracción (-) con espacios en blanco.
+
+Por ejemplo, la expresión a continuación no sería una expresión válida porque el operador de resta está inmediatamente antes del segundo operando.
+
+calc(100% -30px)
+El operador de resta (-) debe estar rodeado por espacios en blanco, como este. Agregar el espacio en blanco creará una expresión válida.
+
+calc(100% - 30px)
+Esto no es necesario para los operadores de multiplicación y división, pero es altamente recomendado.
+
+También puedes anidar llamadas a la función calc() si necesitas realizar cálculos y usar esos resultados en otros cálculos.
+
+Además, si usas el valor cero para representar longitud en la expresión que pasas a la función calc(), debes incluir las unidades. Por ejemplo, esta expresión no sería válida:
+
+calc(100% - 0)
+Necesitarías agregar las unidades, como px.
+
+calc(100% - 0px)
+También debes saber que actualmente, si usas los operadores de multiplicación o división, uno de los operandos debe estar sin unidades. Para el operador de división, específicamente el operando derecho debe estar sin unidades. Esta no sería una expresión válida porque ambos operandos tienen unidades (píxeles). Uno de los operandos, ya sea 5 o 50, debe estar sin unidades:
+
+calc(5px * 50px)
+Necesitarías omitir las unidades en uno de ellos. Ambas alternativas serían válidas:
+
+calc(5 * 50px)
+calc(5px * 50)
+Y este es un ejemplo con el operador de división. Esto no sería una expresión válida ya que ambos tienen unidades:
+
+calc(50% / 5%)
+Debes eliminar la unidad del operando derecho cuando tengas el operador de división:
+
+calc(50% / 5)
+La función calc() puede ser muy útil para ti como desarrollador web. Con esta función, puedes establecer los valores de las propiedades dinámicamente para crear diseños flexibles y receptivos.
